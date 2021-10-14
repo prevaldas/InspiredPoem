@@ -21,13 +21,8 @@
     <form action="/page2.html" method="post">
       <button type="submit" name="button" class="btn">Page 2</button>
     </form>
-    <p id="name"></p>
+    <p id="name">2021 © Evaldas Pranckevicius</p>
   </div>
-  <script type="text/javascript">
-    fetch('http://worldclockapi.com/api/json/utc/now')
-      .then(data => data.json())
-      .then(d => document.getElementById("name").innerHTML = ("©  " + new Date(d.currentDateTime).getFullYear() + " Evaldas Pranckevicius"));
-  </script>
   <script src="app.js"></script>
 </body>
 
