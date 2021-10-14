@@ -7,6 +7,7 @@ const app = express();
 app.use(express.static("public"));
 app.set('view engine', "ejs");
 
+
 //First page rendering.
 
 app.get("/", function(req, res){
