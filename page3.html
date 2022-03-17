@@ -23,15 +23,9 @@
     </form>
     <p id="name"></p>
   </div>
-  <script src="app.js"></script>
-  <footer>
-    <p id="name"></p>
-  </footer>
-  <script>
-      fetch('http://worldclockapi.com/api/json/utc/now')
-        .then(data => data.json())
-        .then(d =>
-        document.getElementById("name").innerHTML = ("©  " + new Date(d.currentDateTime).getFullYear() + " Evaldas Pranckevicius"));
+  <script type = "text/javascript">
+  const currenDate = new Date();
+  document.getElementById("name").innerHTML = ("© " + currenDate.getFullYear() + " Evaldas Pranckevicius");
   </script>
   <script src="app.js"></script>
 </body>
